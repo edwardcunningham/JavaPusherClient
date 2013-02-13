@@ -239,6 +239,7 @@ public class Pusher {
 
 			try {
 				data.put("channel", channelName);
+				message.put("channel", channelName);
 				message.put("event", eventName);
 				message.put("data", data);
 				webSocket.send(message.toString());
